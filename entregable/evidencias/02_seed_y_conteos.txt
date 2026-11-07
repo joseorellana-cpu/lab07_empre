@@ -1,0 +1,15 @@
+$ python manage.py migrate
+  Applying blog.0001_initial... OK
+  Applying sessions.0001_initial... OK
+
+$ python manage.py seed_blog
+Listo: 4 autores, 15 artículos, 23 comentarios.
+
+$ python manage.py shell  (conteos con el ORM)
+Autores: 4
+Perfiles: 4
+Categorias: 4
+Etiquetas: 5
+Articulos: 15 | publicados: 11
+Comentarios: 23
+Autores sin artículo publicado: ['Carla Rojas', 'Diego Pinto']
